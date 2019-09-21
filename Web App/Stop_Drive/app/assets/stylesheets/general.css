@@ -1,0 +1,24 @@
+body {
+  margin : 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.profilecard {
+ background-color: lightgrey;
+ display: flex;
+ margin-bottom: 20px;
+ -webkit-box-shadow: 10px 5px 24px -2px rgba(0,0,0,0.58);
+-moz-box-shadow: 10px 5px 24px -2px rgba(0,0,0,0.58);
+box-shadow: 10px 5px 24px -2px rgba(0,0,0,0.58);
+}
+
+.profilecard div  {
+ margin: auto;
+ padding: 10px;
+}
+
+.profilecard img {
+  width: 30vw;
+  height: 100%;
+}
+
