@@ -94,6 +94,20 @@ nav ul li a:hover {
   font-size: 4rem;
 }
 
+.article {
+  width: 80vw;
+  text-align: justify;
+  margin: auto;
+}
+
+.article h2 {
+  text-align: center;
+}
+
+.article li {
+  list-style-type: square;
+}
+
 
 /* My Report */
 
