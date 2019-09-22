@@ -1,24 +1,163 @@
+/* Application Layer */
 body {
-  margin : 0;
+  margin : 0 auto;
   font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+  max-width: 1400px;
+  min-width: 600px;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  margin-top: 65px;
+}
+
+/* NAV BAR */
+
+nav {
+  background-color: rgb(102, 102, 102);
+  position: fixed;
+  z-index: 3;
+  margin: 0 auto auto auto;
+  width: 100%;
+  max-width: 1400px;
+  border-radius: 0 0 100px 100px;
+}
+
+nav ul {
+  justify-content: space-around;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  color: white;
+  padding: 15px;
+  display: block;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-block-start: 0;
+}
+
+nav ul li a.current-page {
+  background-color: cornflowerblue;
+}
+
+nav ul li a:hover {
+  background-color: gray;
+  transition: 0.3s;
+}
+
+/* Welcome */
+
+
+.title {
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1518623001395-125242310d0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80");
+  height: 800px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.title h1 {
+  padding-top: 7rem;
+  font-size: 4rem;
+  margin-block-end: 0.40em;
+  margin-block-start: 0em;
+}
+
+.whitetitlebox {
+
+  width: 90%;
+  margin: -150px auto 0 auto;
+  height: 100px;
+  align-content: center;
+  background-color: white;
+  border-radius: 50% 50% 0 0;
+}
+
+.whitetitlebox h1 {
+
+  display: block;
+  text-align: center;
+  padding: 30px;
+  font-size: 4rem;
+}
+
+
+/* My Report */
+
+.reporttitle {
+  margin-block-start: 0;
+}
+
+.pie {
+  padding: 100px 0 0 5%;
+}
+
+.pie svg {
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  width: 40vw;
+  max-height: 400px;
+}
+
+.graph { visibility: hidden; }
+
+.graph > * { 
+  visibility: visible;
+  transition: all 200ms ease-in-out;
+}
+ 
+.graph:hover > * { opacity: 0.5; }
+
+.graph__percent:hover {
+  stroke: cornflowerblue;
+  opacity: 1;
+}
+
+
+/* About Us */
+
+.contactus {
+  text-align: center;
+}
 .profilecard {
  background-color: lightgrey;
  display: flex;
- margin-bottom: 20px;
+ margin-bottom: 30px;
  -webkit-box-shadow: 10px 5px 24px -2px rgba(0,0,0,0.58);
 -moz-box-shadow: 10px 5px 24px -2px rgba(0,0,0,0.58);
 box-shadow: 10px 5px 24px -2px rgba(0,0,0,0.58);
 }
 
-.profilecard div  {
+.profilecard div {
  margin: auto;
  padding: 10px;
 }
 
-.profilecard img {
+.right {
   width: 30vw;
   height: 100%;
+  margin: auto auto auto 0;
 }
 
+.left {
+  width: 30vw;
+  height: 100%;
+  margin: auto 0 auto auto;
+}
+
+.topmargin {
+  margin-top: 100px;
+}

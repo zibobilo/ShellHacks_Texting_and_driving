@@ -10,6 +10,21 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to 'Stop. Drive', root_path %></li>
+        <li><%= link_to "MY REPORT", myreport_path, :class => current_class?(myreport_path)  %></li>
+        <li><%= link_to "ABOUT US", aboutus_path, :class => current_class?(aboutus_path)  %></li>
+
+      </ul>
+    </nav>
+
     <%= yield %>
+
+  <section>
+    <div>
+      Copyright. All rights reserved.
+    </div>
+  </section>
   </body>
 </html>
