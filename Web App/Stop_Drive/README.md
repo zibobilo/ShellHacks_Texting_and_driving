@@ -1,7 +1,7 @@
 # README
 
-run : bundle
-run : rails s
-open : localhost:3000
+run : "bundle"
+run : "rails s"
+open : "localhost:3000"
 
 
