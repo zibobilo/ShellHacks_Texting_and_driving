@@ -98,6 +98,7 @@ nav ul li a:hover {
   width: 80vw;
   text-align: justify;
   margin: auto;
+  max-width: 1200px;
 }
 
 .article h2 {
